@@ -5,7 +5,15 @@ def find_even_values(src)
   
   row = 0 
   
-  while row < array.length
-  
+  while row < array.length do
+    element = 0 
+    while element <array[row].length do 
+      if array[row][element] % 2 == 0 
+        p array[row][element]
+      end
+      element += 1
+    end
+    row += 1 
+  end
 
 end
